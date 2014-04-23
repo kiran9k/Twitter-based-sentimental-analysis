@@ -90,7 +90,7 @@ public class twitter_api {
 					if(lang.matches("ru")||lang.matches("fr")||lang.matches("nl")||lang.matches("es")||lang.matches("bg"))
 					{
 						try {
-							out=bing_api_usage.translate(tweet.getText(), lang,"en");
+							out=bing_api.translate(tweet.getText(), lang,"en");
 						} catch (Exception e) {
 							System.out.println("error translating "+lang+"\n"+tweet.getText() );
 							// TODO Auto-generated catch block
@@ -102,7 +102,7 @@ public class twitter_api {
 					else if(lang.matches("in"))
 					{
 						try {
-							out=bing_api_usage.translate(tweet.getText(), "hi","en");
+							out=bing_api.translate(tweet.getText(), "hi","en");
 						} catch (Exception e) {
 							System.out.println("error translating "+lang+"\n"+tweet.getText() );
 							// TODO Auto-generated catch block

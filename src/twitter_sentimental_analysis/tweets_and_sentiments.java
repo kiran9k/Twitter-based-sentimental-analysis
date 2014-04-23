@@ -62,7 +62,7 @@ public class tweets_and_sentiments {
 				line=line.replaceAll(m.group(1),"");
 			}
 			}while(m.matches());
-			result=sentiment_demo.sentiment_analysis(tweet_text.get(i));
+			result=sentimental_analysis.sentiment_analysis(tweet_text.get(i));
 			System.out.println(line);
 			System.out.println(original_tweet.get(i));
 			System.out.println(result);
